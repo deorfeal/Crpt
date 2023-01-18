@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/app/scss/style.css">
+</head>
+
+<body class="body">
+
+  <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="header__logo logo" href="#">
+                <img class="logo-img" src="images/logo.png" alt="logo">
+            </a>
+            <div class="header__wrapper">
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link" href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link" href="#">
+                                Партнёрам
+                            </a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link" href="#">
+                                Правила обмена
+                            </a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link" href="#">
+                                AML/KYC
+                            </a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link" href="#">
+                                О сервесе
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-nav header-user-nav">
+                    <button class="header-user-nav__btn header-user-nav-btn" type="button">
+                        <img class="header-user-nav-btn__img" src="images/lang-flag.png" alt="flag">
+                        <img class="header-user-nav-btn__arrow" src="images/lang-arrow.png" alt="arrow">
+                        <ul style="display: none;" class="header-user-nav-btn__list">
+                            <li class="header-user-nav-btn__list-item">
+                                <p class="header-user-nav-btn__list-text">
+                                    Рус
+                                </p>
+                            </li>
+                            <li class="header-user-nav-btn__list-item">
+                                <p class="header-user-nav-btn__list-text">
+                                    Укр
+                                </p>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+            <button class="header__btn">
+                <img class="header__btn-img" src="images/menu-icon.png" alt="burger">
+                <img class="header__btn-img" src="images/menu-close-icon.png" alt="burger-close">
+            </button>
+        </div>
+    </div>
+</header>
+  <div class="wrapper">
+    <main class="main">
+      <section class="main__section-top section-top">
+        <div class="container">
+          <div class="section-top__inner">
+            <div class="section-top__box">
+              <h1 class="section-top__box-title title">
+                Обменивай безопасно
+              </h1>
+              <p class="section-top__box-text">
+                Главная задача которую мы ставим перед собой - быстрые и безопасные обмены для наших клиентов 24/7.
+                Попробуйте наш сервис и ощутите все преимущества.
+              </p>
+            </div>
+            <img class="section-top__img" src="images/section-top-img.png" alt="img">
+          </div>
+        </div>
+      </section>
+      <div class="main__message main-message">
+        <div class="container">
+          <div class="main-message__inner">
+            <div class="main-message__box">
+              <img class="main-message__box-img" src="images/message-icon.png" alt="">
+              <p style="display: none;" class="main-message__box-text">
+                Сайт работает в автоматическом режиме.
+              </p>
+            </div>
+            <p class="main-message__text">
+              <span class="main-message__text--desc">Сайт работает в автоматическом режиме.</span> <br>
+              Служба поддержки клиентов находится ОНЛАЙН ежедневно с <span class="main-message__text--white">10:00 до</span> <span class="main-message__text--white">23:00</span> <span class="main-message__text--white">UTC+3</span> <br>
+              Если Вы осуществляете обмен с <span class="main-message__text--white">23:00</span> до <span class="main-message__text--white">10:00</span> и Вам необходима помощь консультанта, просим подождать, <br>
+              когда консультант будет ОНЛАЙН. <br>
+              <span class="main-message__text--desc"> Спасибо за понимание.</span>
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="main__exchange exchange">
+        <div class="container">
+          <div class="main-exchange__inner">
+            <div class="exchange__column exchange-column" data-ref="container-1">
+              <div class="exchange-column__top exchange-column-top">
+                <div class="exchange-column-top__row exchange-column-top-row">
+                  <p class="exchange-column-top-row__text">
+                    Отдаёте
+                  </p>
+                  <div class="exchange-column-top-row__box exchange-column-top-row-box">
+                    <div class="exchange-column-top-row-box__wrapper">
+                      <p class="exchange-column-top-row-box__wrapper-min">
+                        Мин: 0.00012345
+                      </p>
+                      <p class="exchange-column-top-row-box__wrapper-max">
+                        Макс: 100.00
+                      </p>
+                    </div>
+                    <img class="exchange-column-top-row-box__img" src="images/exchange-arrow.png" alt="arrow">
+                  </div>
+                </div>
+                <div class="exchange-column-top__info">
+                  <p class="exchange-column-top__info-text">
+                    0.88405202
+                  </p>
+                  <img class="exchange-column-top__info-crypti" src="images/reserves-icon-1.svg" alt="">
+                </div>
+              </div>
+              <div class="exchange-column__buttons">
+                <button class="exchange-column__buttons-btn" data-filter=".item-first" type="button">
+                  Все
+                </button>
+                <button class="exchange-column__buttons-btn" data-filter=".item-second" type="button">
+                  USD
+                </button>
+                <button class="exchange-column__buttons-btn" data-filter=".item-third" type="button">
+                  Coins
+                </button>
+                <button class="exchange-column__buttons-btn" data-filter=".item-fourth" type="button">
+                  Tokens
+                </button>
+              </div>
+              <div class="exchange-column__wrapper">
+                <ul class="exchange-column__list exchange-column-list mix item-first">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active exchange-column-list__active--active"
+                      src="images/exchange-active-arronw.svg" alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+                <ul class="exchange-column__list exchange-column-list mix item-second">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active exchange-column-list__active--active"
+                      src="images/exchange-active-arronw.svg" alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+                <ul class="exchange-column__list exchange-column-list mix item-third">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active exchange-column-list__active--active"
+                      src="images/exchange-active-arronw.svg" alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+                <ul class="exchange-column__list exchange-column-list mix item-fourth">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active exchange-column-list__active--active"
+                      src="images/exchange-active-arronw.svg" alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="exchange__column exchange-column" data-ref="container-2">
+              <div class="exchange-column__top exchange-column-top">
+                <div class="exchange-column-top__row exchange-column-top-row">
+                  <p class="exchange-column-top-row__text">
+                    Получите
+                  </p>
+                  <div class="exchange-column-top-row__box exchange-column-top-row-box">
+                    <div class="exchange-column-top-row-box__wrapper">
+                      <p class="exchange-column-top-row-box__wrapper-text">
+                        Резевр: 4200.00
+                      </p>
+                    </div>
+                    <img class="exchange-column-top-row-box__img" src="images/exchange-arrow.png" alt="arrow">
+                  </div>
+                </div>
+                <div class="exchange-column-top__info">
+                  <p class="exchange-column-top__info-text">
+                    11.389081
+                  </p>
+                  <img class="exchange-column-top__info-crypti" src="images/reserves-icon-2.svg" alt="">
+                </div>
+              </div>
+              <div class="exchange-column__buttons">
+                <button class="exchange-column__buttons-btn" data-filter=".item-first" type="button">
+                  Все
+                </button>
+                <button class="exchange-column__buttons-btn" data-filter=".item-second" type="button">
+                  USD
+                </button>
+                <button class="exchange-column__buttons-btn" data-filter=".item-third" type="button">
+                  Coins
+                </button>
+                <button class="exchange-column__buttons-btn" data-filter=".item-fourth" type="button">
+                  Tokens
+                </button>
+              </div>
+              <div class="exchange-column__wrapper">
+                <ul class="exchange-column__list exchange-column-list mix item-first">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active exchange-column-list__active--active"
+                      src="images/exchange-active-arronw.svg" alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard USD
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard EUR
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard KZT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+                <ul class="exchange-column__list exchange-column-list mix item-second">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard USD
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard EUR
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard KZT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+                <ul class="exchange-column__list exchange-column-list mix item-third">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active exchange-column-list__active--active"
+                      src="images/exchange-active-arronw.svg" alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>    
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polkadot DOT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TRON TRX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tezos XTZ
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Avalanche AVAX
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Zcash ZEC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard USD
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard EUR
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard KZT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+                <ul class="exchange-column__list exchange-column-list mix item-fourth">
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Bitcoin BTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ethereum ETH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active exchange-column-list__active--active"
+                      src="images/exchange-active-arronw.svg" alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Smart Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Binance Beacon Chain BNB
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Litecoin LTC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Ripple XRP
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dash DASH
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Cardano ADA
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Dogecoin DOGE
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Polygon MATIC
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Solana SOL
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Tether USDT TRC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TONCOIN ERC-20
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        TWT BEP-2
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard USD
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard EUR
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                  <li class="exchange-column-list__item">
+                    <div class="exchange-column-list__box">
+                      <img class="exchange-column-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                      <p class="exchange-column-list__box-text">
+                        Visa/Mastercard KZT
+                      </p>
+                    </div>
+                    <img class="exchange-column-list__active" src="images/exchange-active-arronw.svg"
+                      alt="active-arrow">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="exchange__data exchange-data">
+              <div class="exchange-data__top exchange-data-top">
+                <p class="exchange-data-top__text">Ввод данных</p>
+                <div class="exchange-data-top__info">
+                  <p class="exchange-data-top__info-text">
+                    Курс:
+                    <span>1/12.88</span>
+                  </p>
+                  <img class="exchange-data-top__info-img" src="images/exchange-data-graph.svg" alt="icon">
+                </div>
+              </div>
+              <div class="exchange-data__box exchange-data-box">
+                <div class="exchange-data-box__item exchange-data-box-item">
+                  <div class="exchange-data-box-item__row">
+                    <img class="exchange-data-box-item__row-img" src="images/reserves-icon-1.svg" alt="icon">
+                    <p class="exchange-data-box-item__row-text">
+                      Bitcoin
+                    </p>
+                  </div>
+                  <div class="exchange-data-box-item__info">
+                    <p class="exchange-data-box-item__info-text">
+                      0.88405202 BTC
+                    </p>
+                    <img class="exchange-data-box-item__info-img" src="images/exchange-arrow.png" alt="arrow">
+                  </div>
+                </div>
+                <div class="exchange-data-box__middle exchange-data-box-middle">
+                  <img class="exchange-data-box-middle__img" src="images/exchange-middle-img-1.svg" alt="icon">
+                  <img class="exchange-data-box-middle__img" src="images/exchange-middle-img-2.svg" alt="icon">
+                  <img class="exchange-data-box-middle__img" src="images/exchange-middle-img-1.svg" alt="icon">
+                </div>
+                <div class="exchange-data-box__item exchange-data-box-item">
+                  <div class="exchange-data-box-item__row">
+                    <img class="exchange-data-box-item__row-img" src="images/reserves-icon-2.svg" alt="icon">
+                    <p class="exchange-data-box-item__row-text">
+                      Ethereum
+                    </p>
+                  </div>
+                  <div class="exchange-data-box-item__info">
+                    <p class="exchange-data-box-item__info-text">
+                      11.389081 ETH
+                    </p>
+                    <img class="exchange-data-box-item__info-img" src="images/exchange-arrow.png" alt="arrow"
+                      style="transform: rotate(180deg);">
+                  </div>
+                </div>
+              </div>
+              <form class="exchange-data__form exchange-data-form" action="#">
+                <p class="exchange-data-form__text">
+                  Заполни форму
+                </p>
+                <div class="exchange-data-form__box">
+                  <input class="exchange-data-form__box-input" type="text" placeholder="Ethereum адрес">
+                  <img class="exchange-data-form__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                </div>
+                <div class="exchange-data-form__box">
+                  <input class="exchange-data-form__box-input" type="text" placeholder="E-mail">
+                </div>
+                <div class="exchange-data-form__consent">
+                  <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <p class="exchange-data-form__consent-text">
+                    Я согласен с условиями и
+                    <a href="#">
+                      правилами сервиса
+                    </a>
+                    .
+                  </p>
+                </div>
+                <button class="exchange-data-form__btn" type="submit">Обменять сейчас</button>
+              </form>
+              <div class="exchange-data__bottom exchange-data-bottom">
+                <p class="exchange-data-bottom__text">
+                  Данная операция происходит в автоматическом режиме 24/7 и занимает до 15-ти минут
+                  <span>после получения 2-го подтверждения транзакции</span>.
+                </p>
+                <br>
+                <br>
+                <p class="exchange-data-bottom__text">
+                  <span>Внимание!</span> Будет проведена
+                  AML-проверка Вашей транзакции.
+                  В случае, если Ваш адрес или криптовалюта, отправленная Вами, будет иметь High Risk/Middle Risk или
+                  связана с нелегитимными источниками — будет проводиться проверка личности.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <section class="main__advantage main-advantage">
+        <div class="container">
+          <div class="main-advantage__inner">
+            <h2 class="main-advantage__title title">
+              Преимущества нашего сервиса
+            </h2>
+            <div class="main-advantage__wrapper">
+              <div class="main-advantage__box main-advantage-box">
+                <img class="main-advantage-box__img" src="images/advantage-icon-1.png" alt="img">
+                <div class="main-advantage-box__row">
+                  <p class="main-advantage-box__text">
+                    Гарантии
+                  </p>
+                  <p class="main-advantage-box__subtext">
+                    У нас 100% обмены с последующими выплатами!
+                  </p>
+                </div>
+              </div>
+              <div class="main-advantage__box main-advantage-box">
+                <img class="main-advantage-box__img" src="images/advantage-icon-2.png" alt="img">
+                <div class="main-advantage-box__row">
+                  <p class="main-advantage-box__text">
+                    Конфиденциальность
+                  </p>
+                  <p class="main-advantage-box__subtext">
+                    Мы не храним и не передаем, информацию о Вас, третьим лицам.
+                  </p>
+                </div>
+              </div>
+              <div class="main-advantage__box main-advantage-box">
+                <img class="main-advantage-box__img" src="images/advantage-icon-3.png" alt="img">
+                <div class="main-advantage-box__row">
+                  <p class="main-advantage-box__text">
+                    Поддержка
+                  </p>
+                  <p class="main-advantage-box__subtext">
+                    Наша команда поддержки всегда готова! Ответить на ваши технические вопросы.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section class="main__reserves main-reserves">
+        <div class="container">
+          <div class="main-reserves__wrapper">
+            <h2 class="main-reserves__title title">
+              Наши резервы
+            </h2>
+            <div class="main-reserves__inner">
+              <ul class="main-reserves__list main-reserves-list">
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-1.svg" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Bitcoin BTC
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-2.svg" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Ethereum ETH
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-3.png" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Binance Smart Chain BNB
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-4.png" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Binance Beacon Chain BNB
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-5.png" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Litecoin LTC
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-6.png" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Ripple XRP
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-7.png" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Dash DASH
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-8.png" alt="icon">
+                    <p class="main-reserves-list__box-text">
+                      Cardano ADA
+                    </p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-9.png" alt="icon">
+                    <p class="main-reserves-list__box-text">Dogecoin DOGE</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-10.png" alt="icon">
+                    <p class="main-reserves-list__box-text">Polkadot DOT</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-11.png" alt="icon">
+                    <p class="main-reserves-list__box-text">TRON TRX</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-12.png" alt="icon">
+                    <p class="main-reserves-list__box-text">Tezos XTZ</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+              </ul>
+              <ul class="main-reserves__list main-reserves-list">
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-13.png" alt="icon">
+                    <p class="main-reserves-list__box-text">Avalanche AVAX</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-14.png" alt="icon">
+                    <p class="main-reserves-list__box-text">Zcash ZEC</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-15.png" alt="icon">
+                    <p class="main-reserves-list__box-text">Polygon MATIC</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-16.png" alt="icon">
+                    <p class="main-reserves-list__box-text">Solana SOL</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-17.svg" alt="icon">
+                    <p class="main-reserves-list__box-text">Tether USDT ERC-20</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-18.svg" alt="icon">
+                    <p class="main-reserves-list__box-text">Tether USDT TRC-20</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-19.png" alt="icon">
+                    <p class="main-reserves-list__box-text">TONCOIN ERC-20</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-20.png" alt="icon">
+                    <p class="main-reserves-list__box-text">TWT BEP-2</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                    <p class="main-reserves-list__box-text">Visa/Mastercard USD</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                    <p class="main-reserves-list__box-text">Visa/Mastercard EUR</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+                <li class="main-reserves-list__item">
+                  <div class="main-reserves-list__box">
+                    <img class="main-reserves-list__box-img" src="images/reserves-icon-21.svg" alt="icon">
+                    <p class="main-reserves-list__box-text">Visa/Mastercard KZT</p>
+                  </div>
+                  <p class="main-reserves-list__price">
+                    4200.00 BTC
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section class="main__recalls recalls">
+        <div class="container">
+          <div class="recalls__inner">
+            <h2 class="recalls__title title">
+              Отзывы
+            </h2>
+            <p class="recalls__text">
+              Отзывы автоматически появляются на сайте из BestChange. Чтобы оставить отзыв, перейдите на BestChange и он
+              автоматически появиться на сайте.
+            </p>
+            <div class="recalls__arrow-box">
+              <div class="recalls-swiper-button-prev swiper-button-prev">
+                <img src="images/recalls-arrow.png" alt="arrow">
+              </div>
+              <div class="recalls-swiper-button-next swiper-button-next">
+                <img src="images/recalls-arrow.png" alt="arrow">
+              </div>
+            </div>
+            <div class="recalls-swiper swiper">
+              <div class="recalls-swiper-wrapper swiper-wrapper">
+                <div class="recalls-slide swiper-slide">
+                  <div class="recalls-slide__box recalls-slide-box">
+                    <div class="recalls-slide-box__top recalls-slide-box-top">
+                      <p class="recalls-slide-box-top__text">
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем) <br>
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем)
+                      </p>
+                      <p class="recalls-slide-box-top__date">
+                        2 января 2023 – 14:32
+                      </p>
+                    </div>
+                    <div class="recalls-slide-box__bottom">
+                      <img class="recalls-slide-box__bottom-img" src="images/recalls-person.png" alt="person">
+                      <p class="recalls-slide-box__bottom-name">
+                        Ярослав
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recalls-slide swiper-slide">
+                  <div class="recalls-slide__box recalls-slide-box">
+                    <div class="recalls-slide-box__top recalls-slide-box-top">
+                      <p class="recalls-slide-box-top__text">
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем) <br>
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем)
+                      </p>
+                      <p class="recalls-slide-box-top__date">
+                        2 января 2023 – 14:32
+                      </p>
+                    </div>
+                    <div class="recalls-slide-box__bottom">
+                      <img class="recalls-slide-box__bottom-img" src="images/recalls-person.png" alt="person">
+                      <p class="recalls-slide-box__bottom-name">
+                        Ярослав
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recalls-slide swiper-slide">
+                  <div class="recalls-slide__box recalls-slide-box">
+                    <div class="recalls-slide-box__top recalls-slide-box-top">
+                      <p class="recalls-slide-box-top__text">
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем) <br>
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем)
+                      </p>
+                      <p class="recalls-slide-box-top__date">
+                        2 января 2023 – 14:32
+                      </p>
+                    </div>
+                    <div class="recalls-slide-box__bottom">
+                      <img class="recalls-slide-box__bottom-img" src="images/recalls-person.png" alt="person">
+                      <p class="recalls-slide-box__bottom-name">
+                        Ярослав
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recalls-slide swiper-slide">
+                  <div class="recalls-slide__box recalls-slide-box">
+                    <div class="recalls-slide-box__top recalls-slide-box-top">
+                      <p class="recalls-slide-box-top__text">
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем) <br>
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем)
+                      </p>
+                      <p class="recalls-slide-box-top__date">
+                        2 января 2023 – 14:32
+                      </p>
+                    </div>
+                    <div class="recalls-slide-box__bottom">
+                      <img class="recalls-slide-box__bottom-img" src="images/recalls-person.png" alt="person">
+                      <p class="recalls-slide-box__bottom-name">
+                        Ярослав
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recalls-slide swiper-slide">
+                  <div class="recalls-slide__box recalls-slide-box">
+                    <div class="recalls-slide-box__top recalls-slide-box-top">
+                      <p class="recalls-slide-box-top__text">
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем) <br>
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем)
+                      </p>
+                      <p class="recalls-slide-box-top__date">
+                        2 января 2023 – 14:32
+                      </p>
+                    </div>
+                    <div class="recalls-slide-box__bottom">
+                      <img class="recalls-slide-box__bottom-img" src="images/recalls-person.png" alt="person">
+                      <p class="recalls-slide-box__bottom-name">
+                        Ярослав
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recalls-slide swiper-slide">
+                  <div class="recalls-slide__box recalls-slide-box">
+                    <div class="recalls-slide-box__top recalls-slide-box-top">
+                      <p class="recalls-slide-box-top__text">
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем) <br>
+                        Очень крутая обменка с лучшей тех поддержкой. рекомендую всем)
+                      </p>
+                      <p class="recalls-slide-box-top__date">
+                        2 января 2023 – 14:32
+                      </p>
+                    </div>
+                    <div class="recalls-slide-box__bottom">
+                      <img class="recalls-slide-box__bottom-img" src="images/recalls-person.png" alt="person">
+                      <p class="recalls-slide-box__bottom-name">
+                        Ярослав
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section class="main__partners main-partners">
+        <div class="container">
+          <div class="main-partners__inner">
+            <h2 class="main-partners__title title">
+              Партнёры
+            </h2>
+            <div class="main-partners__wrapper">
+              <div class="main-partners__box main-partners-box">
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-1.svg" alt="partner">
+                </a>
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-2.svg" alt="partner">
+                </a>
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-3.png" alt="partner">
+                </a>
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-4.svg" alt="partner">
+                </a>
+              </div>
+              <div class="main-partners__box main-partners-box">
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-5.svg" alt="partner">
+                </a>
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-6.png" alt="partner">
+                </a>
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-7.png" alt="partner">
+                </a>
+                <a class="main-partners-box__link" href="#">
+                  <img class="main-partners-box__link-img" src="images/partners-img-8.png" alt="partner">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section> 
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="header__logo logo" href="#">
+            <img class="logo-img" src="images/logo.png" alt="logo">
+          </a>
+          <div class="footer__box footer-box">
+            <img class="footer-box__img" src="images/footer-tg.png" alt="img">
+            <div class="footer-box__column">
+              <p class="footer-box__column-text">
+                Центр поддержки
+              </p>
+              <a class="footer-box__column-link" href="#">
+                Пишите в Telegram по любым вопросам
+              </a>
+            </div>
+          </div>
+          <div class="footer__box footer-box">
+            <img class="footer-box__img" src="images/footer-mail.png" alt="img">
+            <div class="footer-box__column">
+              <p class="footer-box__column-text">
+                Связь по E-mail
+              </p>
+              <a class="footer-box__column-link" href="mailto:support@goldencash.app">
+                support@goldencash.app
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copy">
+          2019-2023. GoldenCash Exchange. All rights reserved.©
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
